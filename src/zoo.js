@@ -128,6 +128,7 @@ function increasePrices(percentage) {
   prices.Adult = Math.ceil(Adult * ((percentage) + 100)) / 100;/* Math.ceil retorna o menor número inteiro maior ou igual a "x". Font: <https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil> */
   prices.Child = Math.ceil(Child * ((percentage) + 100)) / 100;
   prices.Senior = Math.ceil(Senior * ((percentage) + 100)) / 100;
+  /* de acordo com colegas, poderia ter usado Math.round também */
 }
 console.log(prices.Adult);
 console.log(prices.Child);
